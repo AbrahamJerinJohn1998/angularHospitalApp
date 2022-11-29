@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./patient-entry.component.css']
 })
 export class PatientEntryComponent {
+  patientName=""
+  patientId=""
+  address=""
+  contactNo=""
+  dateAppointment=""
+  doctorName=""
 
+  readValues=()=>
+  {
+  
+  let data:any={"patientId":this.patientId,"patientName":this.patientName,"address":this.address,"contactNo":this.contactNo,"dateAppointment":this.dateAppointment,"doctorName":this.doctorName}
+  console.log(data)
+  }
 }
